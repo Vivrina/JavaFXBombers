@@ -1,0 +1,43 @@
+#mainButton {
+    -fx-background-image: url("/img/create_lobby.png");
+}
+
+#rightButton {
+    -fx-background-image: url("/img/arrows/right.png");
+}
+
+#leftButton {
+    -fx-background-image: url("/img/arrows/left.png");
+}
+
+#doneButton {
+    -fx-background-image: url("/img/done.png");
+}
+
+#rightButtonN {
+    -fx-background-image: url("/img/arrows/right.png");
+}
+
+#leftButtonN {
+    -fx-background-image: url("/img/arrows/left.png");
+}
+
+#doneButtonN {
+    -fx-background-image: url("/img/done.png");
+}
+
+#readyButton {
+    -fx-background-image: url("/img/done.png");
+}
+
+#enter_lobby{
+    -fx-background-image: url("/img/enter_lobby.png");
+}
+
+#lobbyButton {
+    -fx-background-image: url("/img/done.png");
+}
+
+#toTheMenu {
+    -fx-background-image: url("/img/done.png");
+}

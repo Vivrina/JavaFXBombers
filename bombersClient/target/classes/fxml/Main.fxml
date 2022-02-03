@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.geometry.Insets?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ru.itis.controller.MainController"
+            prefHeight="1080.0" prefWidth="1920.0">
+
+    <StackPane fx:id="menu">
+        <ImageView fx:id="bg"   fitWidth="1920" fitHeight="1080"/>
+        <VBox fx:id="lobby">
+
+            <AnchorPane>
+                <Button fx:id="mainButton" stylesheets="/css/button.css" layoutX="744.0" layoutY="550" prefHeight="82.0" prefWidth="432.0" onAction="#pressStartButton"/>
+                <Button fx:id="enter_lobby" stylesheets="/css/button.css" layoutX="744.0" layoutY="665" prefHeight="83.0" prefWidth="432.0" onAction="#pressStartButton"/>
+            </AnchorPane>
+        </VBox>
+        <VBox fx:id="info">
+            <padding>
+                <Insets top="450" left="800" />
+            </padding>
+            <VBox>
+                <Label text="Введите код лобби: "/>
+                <TextField fx:id="codeField"  maxWidth="300"/>
+            </VBox>
+            <VBox>
+                <Label text="Введите никнейм: "/>
+                <TextField fx:id="nameField"  maxWidth="300"/>
+            </VBox>
+            <Button fx:id="lobbyButton"  stylesheets="/css/button.css" prefHeight="93.0" prefWidth="271.0" onAction="#pressSetCodeAndUsername" />
+        </VBox>
+        <VBox fx:id="CatV">
+            <padding>
+                <Insets top="350" left="460" />
+            </padding>
+            <HBox fx:id="CatH">
+                <Button fx:id="leftButton"  stylesheets="/css/button.css" prefHeight="150.0" prefWidth="150.0" onAction="#leftCharacter" />
+
+                <ImageView fx:id="cat"   fitWidth="300.0" fitHeight="300.0"/>
+
+                <Button fx:id="rightButton"  stylesheets="/css/button.css" prefHeight="150.0" prefWidth="150.0" onAction="#rightCharacter" />
+            </HBox>
+
+            <HBox>
+                <padding>
+                    <Insets left="360" />
+                </padding>
+                <Button fx:id="doneButton"  stylesheets="/css/button.css" prefHeight="93.0" prefWidth="271.0" onAction="#pressFirstReadyButton" />
+            </HBox>
+        </VBox>
+        <VBox fx:id="MapV">
+            <padding>
+                <Insets top="350" left="460" />
+            </padding>
+            <HBox fx:id="MapH">
+                <Button fx:id="leftButtonN"  stylesheets="/css/button.css" prefHeight="150.0" prefWidth="150.0" onAction="#leftMap" />
+
+                <ImageView fx:id="map"   fitWidth="300.0" fitHeight="300.0"/>
+
+                <Button fx:id="rightButtonN"  stylesheets="/css/button.css" prefHeight="150.0" prefWidth="150.0" onAction="#rightMap" />
+            </HBox>
+
+            <HBox>
+                <padding>
+                    <Insets left="360" />
+                </padding>
+                <Button fx:id="readyButton"  stylesheets="/css/button.css" prefHeight="93.0" prefWidth="271.0" onAction="#pressTwoReadyButton" />
+            </HBox>
+        </VBox>
+
+    </StackPane>
+
+
+</AnchorPane>
