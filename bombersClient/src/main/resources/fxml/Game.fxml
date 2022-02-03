@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.geometry.Insets?>
+<AnchorPane fx:id="gameZone" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ru.itis.controller.GameController"
+            prefHeight="1080.0" prefWidth="1920.0">
+        <HBox fx:id="game">
+            <VBox fx:id="messageControl1" prefHeight="1080.0" prefWidth="420.0">
+                <ScrollPane fx:id="messagesArea1">
+                    <VBox fx:id="messages1">
+                        <children/>
+                    </VBox>
+                </ScrollPane>
+                <HBox>
+                    <TextField fx:id="messageText1" minWidth="400" accessibleText="Введите сообщение"/>
+                </HBox>
+                <Button fx:id="sendMessageButton1" text="Отправить сообщение" onAction="#sendMessage"/>
+            </VBox>
+
+
+            <StackPane fx:id="gameArea"  prefHeight="1080.0" prefWidth="1080.0">
+                <GridPane fx:id="gameTable">
+
+                </GridPane>
+            </StackPane>
+
+
+
+            <VBox fx:id="messageControl2" prefHeight="1080.0" prefWidth="420.0">
+                <ScrollPane fx:id="messagesArea2">
+                    <VBox fx:id="messages2">
+                        <children/>
+                    </VBox>
+                </ScrollPane>
+
+            </VBox>
+        </HBox>
+
+    <StackPane fx:id="waitingBlock">
+        <ImageView fx:id="bg0"   fitWidth="1920" fitHeight="1080"/>
+        <HBox>
+            <padding>
+                <Insets top="450" left="850" />
+            </padding>
+            <ImageView fx:id="loadingImage"   fitWidth="200.0" fitHeight="200.0"/>
+        </HBox>
+    </StackPane>
+
+
+
+</AnchorPane>
